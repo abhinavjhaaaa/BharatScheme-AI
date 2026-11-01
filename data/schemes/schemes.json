@@ -1,0 +1,540 @@
+[
+  {
+    "scheme_id": "PM-KISAN",
+    "scheme_name": "Pradhan Mantri Kisan Samman Nidhi",
+    "category": "Agriculture",
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "level": "Central",
+    "source": "PM-KISAN Operational Guidelines",
+    "official_url": "https://www.pmkisan.gov.in/",
+    "helpline": "155261 / 011-24300606",
+    "description": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN) is a Central Sector Scheme with 100% funding from the Government of India. The scheme provides income support to all landholding farmer families across the country to supplement their financial needs for procuring various inputs related to agriculture and allied activities as well as domestic needs.",
+    "financial_assistance": "Rs. 6,000 per year paid in three equal four-monthly installments of Rs. 2,000 directly into the bank accounts of eligible farmer families through Direct Benefit Transfer (DBT).",
+    "benefits": [
+      "Direct financial support of Rs. 6,000 annually per beneficiary family",
+      "Paid in 3 equal installments of Rs. 2,000 every four months",
+      "Direct Benefit Transfer (DBT) credited directly into Aadhaar-seeded bank accounts",
+      "Helps meet farm input expenses and domestic necessities ahead of harvest seasons"
+    ],
+    "eligibility_summary": "All landholding farmer families having cultivable land in their names, subject to statutory exclusion criteria (such as income tax payers and institutional landholders).",
+    "eligibility_criteria": {
+      "target_group": "Landholding farmer families",
+      "occupation": "farmer",
+      "requires_landholding": true,
+      "max_annual_income": null,
+      "requires_student_status": false
+    },
+    "exclusions": [
+      "All institutional landholders",
+      "Farmer families in which one or more members belong to: Former and present holders of constitutional posts",
+      "Former and present Ministers, MPs, MLAs, MLCs, Mayors of Municipal Corporations, and Chairpersons of District Panchayats",
+      "Serving or retired officers and employees of Central/State Government Ministries, Departments, Public Sector Undertakings (PSUs), Autonomous bodies, Local bodies (excluding Multi Tasking Staff / Class IV / Group D employees)",
+      "All superannuated / retired pensioners whose monthly pension is Rs. 10,000 or more (excluding Class IV / Group D pensioners)",
+      "All persons who paid Income Tax in the last assessment year",
+      "Professionals like Doctors, Engineers, Lawyers, Chartered Accountants, and Architects registered with professional bodies and carrying out profession"
+    ],
+    "documents_required": [
+      "Aadhaar Card (mandatory)",
+      "Landholding document / Record of Rights (ROR) / Khasra Khatauni",
+      "Aadhaar-seeded active bank account passbook details",
+      "Active mobile number linked with Aadhaar",
+      "Citizenship proof and self-declaration of landholding"
+    ],
+    "how_to_apply": "Eligible farmers can apply online through the PM-KISAN portal (Farmers Corner > New Farmer Registration) or via local Common Service Centres (CSCs) and State Nodal Officers."
+  },
+  {
+    "scheme_id": "PM-USP-CSSS",
+    "scheme_name": "PM-USP - Central Sector Scheme of Scholarship for College and University Students",
+    "category": "Education",
+    "ministry": "Ministry of Education (Department of Higher Education)",
+    "level": "Central",
+    "source": "National Scholarship Portal (NSP)",
+    "official_url": "https://scholarships.gov.in/",
+    "helpline": "0120-6619540 (NSP Helpdesk)",
+    "description": "The Central Sector Scheme of Scholarship for College and University Students (PM-USP CSSS) provides financial assistance to meritorious students from low-income families to meet day-to-day expenses while pursuing higher education after Class 12.",
+    "financial_assistance": "Rs. 12,000 per annum at graduation level for the first 3 years of college, and Rs. 20,000 per annum at postgraduate level (or in 4th and 5th year for professional courses).",
+    "benefits": [
+      "Scholarship of Rs. 12,000 per annum for undergraduate degree years (Years 1 to 3)",
+      "Scholarship of Rs. 20,000 per annum for postgraduate studies or 4th/5th year of 5-year integrated professional courses",
+      "Total 82,000 new scholarships awarded annually (divided equally: 41,000 for boys and 41,000 for girls)",
+      "Direct DBT transfer into student's verified bank account via National Scholarship Portal"
+    ],
+    "eligibility_summary": "Students scoring above 80th percentile in relevant stream in Class 12 board examination, pursuing regular degree course in recognized institution, with annual family income up to Rs. 4.5 Lakh.",
+    "eligibility_criteria": {
+      "target_group": "Meritorious undergraduate and postgraduate students",
+      "occupation": "student",
+      "requires_landholding": false,
+      "max_annual_income": 450000,
+      "requires_student_status": true,
+      "min_percentile_12th": 80,
+      "course_type": "Regular / Full-time degree"
+    },
+    "exclusions": [
+      "Students pursuing studies through correspondence, distance, or open university mode",
+      "Students receiving any other scholarship or fee reimbursement from Central or State Government",
+      "Students whose annual family gross income exceeds Rs. 4.5 Lakh",
+      "Students who failed in any academic year or do not maintain minimum 50% marks in annual university exams for renewal"
+    ],
+    "documents_required": [
+      "Aadhaar Card",
+      "Class 12 Passing Certificate and Marksheet",
+      "Valid Income Certificate issued by competent revenue authority (income <= Rs. 4.5 Lakh)",
+      "Proof of admission / Bonafide student certificate from recognized college/university",
+      "Student bank account passbook (Aadhaar seeded)",
+      "Caste / Disability certificate (if claiming reservation quota)"
+    ],
+    "how_to_apply": "Applications must be submitted online on the National Scholarship Portal (scholarships.gov.in) under the Central Sector Schemes section."
+  },
+  {
+    "scheme_id": "AICTE-SWANATH-TECHNICAL",
+    "scheme_name": "AICTE - Swanath Scholarship Scheme (Technical Degree & Diploma)",
+    "category": "Education",
+    "ministry": "All India Council for Technical Education (AICTE), Ministry of Education",
+    "level": "Central",
+    "source": "National Scholarship Portal & AICTE",
+    "official_url": "https://scholarships.gov.in/All-Scholarships",
+    "helpline": "011-29581000 / swanath@aicte-india.org",
+    "description": "AICTE Swanath Scholarship Scheme is aimed at providing financial support to orphan children, children whose parents died due to Covid-19, or children of Armed Forces and Central Paramilitary Forces personnel martyred in action, pursuing technical degree or diploma courses in AICTE-approved institutions.",
+    "financial_assistance": "Rs. 50,000 per annum lump sum amount paid for every year of study towards college fee, computers, books, equipment, and software.",
+    "benefits": [
+      "Rs. 50,000 per annum fixed assistance for every year of regular study",
+      "Awarded for maximum 4 years for Degree students, and 3 years for Diploma students",
+      "Covers tuition fees, hostel expenses, books, equipment, and laptops",
+      "Credited directly via PFMS DBT into beneficiary student's bank account"
+    ],
+    "eligibility_summary": "Orphan students, or Covid-19 orphaned children, or children of martyred Armed/Paramilitary Forces personnel; enrolled in 1st year (or lateral entry 2nd year) in an AICTE-approved technical institution; family income not exceeding Rs. 8 Lakh per annum.",
+    "eligibility_criteria": {
+      "target_group": "Orphan, Covid-affected, or martyred personnel children pursuing technical education",
+      "occupation": "student",
+      "requires_landholding": false,
+      "max_annual_income": 800000,
+      "requires_student_status": true,
+      "special_status_required": [
+        "orphan",
+        "covid_deceased_parents",
+        "martyred_forces_child"
+      ],
+      "institution_type": "AICTE approved technical institution"
+    },
+    "exclusions": [
+      "Students enrolled in non-AICTE approved institutions or non-technical general degree programs",
+      "Students admitted through management quota or non-merit process",
+      "Family income from all sources exceeding Rs. 8,00,000 per annum",
+      "Students availing duplicate benefits under similar Central/State scholarship schemes"
+    ],
+    "documents_required": [
+      "Death certificate of parents (for orphans or COVID-19 deceased parents)",
+      "Martyrdom certificate issued by Defence or Paramilitary authority",
+      "Family Income Certificate issued by competent authority (income <= Rs. 8 Lakh)",
+      "Admission letter / Bonafide certificate from AICTE-approved institution",
+      "Class 10 and Class 12 / Diploma mark sheets",
+      "Aadhaar Card and Bank Account details linked with Aadhaar"
+    ],
+    "how_to_apply": "Apply through the National Scholarship Portal (scholarships.gov.in) during the active application cycle and get the application verified by the institute's nodal officer."
+  },
+  {
+    "benefits": [
+      "Cashless treatment at empanelled public and private hospitals",
+      "Cover of Rs. 5 lakh per family per year",
+      "Covers pre- and post-hospitalisation expenses as per scheme rules",
+      "No cap on family size, age or gender"
+    ],
+    "category": "Health",
+    "description": "Ayushman Bharat PM-JAY provides cashless health insurance cover for secondary and tertiary care hospitalisation to vulnerable families identified on deprivation and occupational criteria.",
+    "documents_required": [
+      "Aadhaar Card",
+      "Ration Card / Family ID as applicable",
+      "Proof of residence and identity of family members",
+      "PM-JAY beneficiary card / e-card if already issued"
+    ],
+    "eligibility_criteria": {
+      "max_annual_income": null,
+      "occupation": "general",
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "secc_deprived_household": true,
+      "target_group": "Deprived and vulnerable families"
+    },
+    "eligibility_summary": "Families identified as deprived / vulnerable under SECC 2011 criteria for rural and urban areas, and other categories notified by States/UTs.",
+    "exclusions": [
+      "Families not identified under the notified SECC / State beneficiary list",
+      "Treatment at non-empanelled hospitals is not covered under the scheme"
+    ],
+    "financial_assistance": "Health cover of Rs. 5,00,000 per family per year on a family floater basis for secondary and tertiary care hospitalisation.",
+    "helpline": "14555",
+    "how_to_apply": "Check eligibility on the beneficiary portal or at a Common Service Centre / empanelled hospital help desk, then complete e-KYC to get the Ayushman card.",
+    "level": "Central",
+    "ministry": "Ministry of Health and Family Welfare",
+    "official_url": "https://beneficiary.nha.gov.in/",
+    "scheme_id": "PM-JAY",
+    "scheme_name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana",
+    "source": "National Health Authority - PM-JAY Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Assistance for construction of a pucca house",
+      "Toilet support through convergence with Swachh Bharat Mission - Gramin",
+      "Unskilled wage support through convergence with MGNREGA",
+      "Support for LPG connection through convergence with PM Ujjwala Yojana"
+    ],
+    "category": "Housing",
+    "description": "PMAY-G provides assistance to eligible rural households for construction of a pucca house with basic amenities, to households that are houseless or living in kutcha / dilapidated houses.",
+    "documents_required": [
+      "Aadhaar Card",
+      "MGNREGA Job Card if available",
+      "Bank account details",
+      "Affidavit / self-declaration as required by the Gram Panchayat",
+      "Swachh Bharat Mission details for toilet construction"
+    ],
+    "eligibility_criteria": {
+      "is_houseless_or_kutcha_house": true,
+      "max_annual_income": null,
+      "occupation": "general",
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Houseless or kutcha-house rural households"
+    },
+    "eligibility_summary": "Rural households that are houseless or living in kutcha / dilapidated houses and identified through SECC 2011 and Awaas+ survey, subject to exclusion criteria.",
+    "exclusions": [
+      "Households owning a pucca house or a motorised vehicle / mechanised agricultural equipment as per exclusion criteria",
+      "Households with a government employee member or an income-tax payer member, as per scheme exclusion rules",
+      "Households not in the Permanent Waitlist / Awaas+ list"
+    ],
+    "financial_assistance": "Rs. 1,20,000 in plain areas and Rs. 1,30,000 in hilly / difficult areas, released in instalments directly to the beneficiary.",
+    "helpline": "1800-11-6446",
+    "how_to_apply": "Eligible households are identified through the Permanent Waitlist. Check status on pmayg.nic.in or contact the Gram Panchayat / Block Development Office.",
+    "level": "Central",
+    "ministry": "Ministry of Rural Development",
+    "official_url": "https://pmayg.nic.in/",
+    "scheme_id": "PMAY-G",
+    "scheme_name": "Pradhan Mantri Awaas Yojana - Gramin",
+    "source": "Ministry of Rural Development - PMAY-G Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Bank account with no minimum balance requirement",
+      "RuPay debit card with in-built accident insurance as per scheme rules",
+      "Direct Benefit Transfer of subsidies into the account",
+      "Overdraft up to Rs. 10,000 for eligible accounts, with preference to the woman account holder of the household"
+    ],
+    "category": "Financial Inclusion",
+    "description": "PMJDY is a national mission for financial inclusion to ensure access to banking, savings, remittance, credit, insurance and pension services for every unbanked household.",
+    "documents_required": [
+      "Aadhaar Card",
+      "PAN Card or Form 60 if available",
+      "Passport-size photograph",
+      "Proof of address if Aadhaar address differs"
+    ],
+    "eligibility_criteria": {
+      "max_annual_income": null,
+      "min_age": 10,
+      "occupation": "general",
+      "requires_bank_account": false,
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Unbanked citizens"
+    },
+    "eligibility_summary": "Any Indian citizen, with account opening for minors above 10 years of age, who does not already have a bank account. Any individual can open an account.",
+    "exclusions": [
+      "Persons already holding a regular bank account are not the primary target, though conversion rules apply as per bank guidelines"
+    ],
+    "financial_assistance": "Zero-balance bank account with RuPay debit card and overdraft facility up to Rs. 10,000 for eligible account holders after satisfactory operation.",
+    "helpline": "1800-11-0001",
+    "how_to_apply": "Apply at any bank branch or Bank Mitra outlet with Aadhaar and photograph, or through the bank's account opening form.",
+    "level": "Central",
+    "ministry": "Ministry of Finance",
+    "official_url": "https://pmjdy.gov.in/",
+    "scheme_id": "PMJDY",
+    "scheme_name": "Pradhan Mantri Jan Dhan Yojana",
+    "source": "Department of Financial Services - PMJDY Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "High interest rate notified by the Government for the scheme, compounded yearly",
+      "Deposits qualify for tax deduction as notified under the Income Tax Act",
+      "Partial withdrawal up to 50% of balance for higher education of the girl child after age 18",
+      "Account can be opened at post offices and authorised bank branches"
+    ],
+    "category": "Savings",
+    "description": "Sukanya Samriddhi Yojana is a small-deposit savings scheme for the girl child, to support her higher education and marriage expenses, with tax benefits under the Income Tax Act as notified.",
+    "documents_required": [
+      "Birth certificate of the girl child",
+      "Aadhaar and PAN / identity proof of parent or guardian",
+      "Address proof of parent or guardian",
+      "Passport-size photographs",
+      "KYC form of the post office / bank"
+    ],
+    "eligibility_criteria": {
+      "gender": "female",
+      "max_age": 10,
+      "max_annual_income": null,
+      "occupation": "general",
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Girl child below 10 years"
+    },
+    "eligibility_summary": "A girl child below 10 years of age. Only one account per girl child, and a maximum of two accounts per family except in case of twin / triplet girl children.",
+    "exclusions": [
+      "Girl child above 10 years of age at the time of opening, except as allowed in special cases notified by the Government",
+      "More than one account for the same girl child",
+      "More than two accounts per family except for twin / triplet girls"
+    ],
+    "financial_assistance": "Deposit Rs. 250 to Rs. 1,50,000 per financial year. The account matures after 21 years from opening or on marriage of the girl child after age 18, as per rules.",
+    "helpline": "1800-266-6868",
+    "how_to_apply": "Open the account at a post office or authorised bank branch with the girl child's birth certificate and guardian's KYC documents.",
+    "level": "Central",
+    "ministry": "Ministry of Finance",
+    "official_url": "https://www.indiapost.gov.in/",
+    "scheme_id": "SSY",
+    "scheme_name": "Sukanya Samriddhi Yojana",
+    "source": "Department of Economic Affairs - Sukanya Samriddhi Account Rules (DRAFT - verify against official notification before submission)"
+  },
+  {
+    "benefits": [
+      "Collateral-free loans as per bank / MFI lending norms",
+      "Loans for working capital and term needs of micro enterprises",
+      "MUDRA Card facility for working capital as per bank rules",
+      "Interest subvention / support where notified by the Government"
+    ],
+    "category": "Business",
+    "description": "PMMY provides loans to non-corporate, non-farm small and micro enterprises for income-generating activities in manufacturing, trading, services and allied agriculture activities.",
+    "documents_required": [
+      "Aadhaar Card and PAN Card",
+      "Proof of business address and business plan / project report",
+      "Bank statements for the previous period as required by the lender",
+      "Proof of category / licence / registration if applicable",
+      "Quotation of items to be purchased, if applicable"
+    ],
+    "eligibility_criteria": {
+      "max_annual_income": null,
+      "occupation": "self_employed",
+      "requires_business_plan": true,
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Micro and small entrepreneurs"
+    },
+    "eligibility_summary": "Indian citizens with a viable business plan for a non-farm micro / small enterprise, including proprietors, partnership firms, SHG members and small companies as per lender norms.",
+    "exclusions": [
+      "Applicants who are defaulters of any bank / financial institution",
+      "Businesses that do not meet the lender's viability and KYC norms",
+      "Large corporate enterprises outside the micro / small enterprise definition"
+    ],
+    "financial_assistance": "Shishu: up to Rs. 50,000. Kishore: above Rs. 50,000 up to Rs. 5 lakh. Tarun: above Rs. 5 lakh up to Rs. 10 lakh. Tarun Plus: above Rs. 10 lakh up to Rs. 20 lakh for successful Tarun borrowers.",
+    "helpline": "1800-180-1111",
+    "how_to_apply": "Apply at any bank, NBFC or microfinance institution with a business plan, or through the Udyamimitra portal / JanSamarth portal.",
+    "level": "Central",
+    "ministry": "Ministry of Finance",
+    "official_url": "https://www.mudra.org.in/",
+    "scheme_id": "PMMY",
+    "scheme_name": "Pradhan Mantri MUDRA Yojana",
+    "source": "MUDRA / Department of Financial Services - PMMY Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Guaranteed minimum pension after age 60",
+      "Spouse continues to receive the same pension after the subscriber's death",
+      "Nominee receives the accumulated pension wealth on death of both subscriber and spouse",
+      "Auto-debit of contributions from the linked savings bank account"
+    ],
+    "category": "Pension",
+    "description": "Atal Pension Yojana guarantees a fixed monthly pension after the age of 60 to workers in the unorganised sector, with the pension amount depending on the contribution and entry age.",
+    "documents_required": [
+      "Aadhaar Card",
+      "Savings bank account / post office savings account details",
+      "Mobile number linked to the account",
+      "Nominee details"
+    ],
+    "eligibility_criteria": {
+      "max_age": 40,
+      "max_annual_income": null,
+      "min_age": 18,
+      "occupation": "general",
+      "requires_bank_account": true,
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Unorganised sector workers aged 18-40"
+    },
+    "eligibility_summary": "Indian citizens aged 18 to 40 years with a savings bank account or post office savings account. Income-tax payers from 1 October 2022 are not eligible to newly enrol.",
+    "exclusions": [
+      "Persons below 18 years or above 40 years of age",
+      "Persons without a savings bank / post office savings account",
+      "Income-tax payers enrolling on or after 1 October 2022"
+    ],
+    "financial_assistance": "Guaranteed pension of Rs. 1,000, Rs. 2,000, Rs. 3,000, Rs. 4,000 or Rs. 5,000 per month after age 60, depending on the chosen pension slab and contributions.",
+    "helpline": "1800-110-069",
+    "how_to_apply": "Enrol at a bank branch or through net banking by filling the APY registration form and choosing a pension slab.",
+    "level": "Central",
+    "ministry": "Ministry of Finance",
+    "official_url": "https://www.npscra.nsdl.co.in/",
+    "scheme_id": "APY",
+    "scheme_name": "Atal Pension Yojana",
+    "source": "Pension Fund Regulatory and Development Authority - APY Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Recognition as a Vishwakarma with ID card and certificate",
+      "Basic and advanced skill training with stipend",
+      "Toolkit incentive of Rs. 15,000",
+      "Credit support, digital transaction incentive and marketing support"
+    ],
+    "category": "Skill",
+    "description": "PM Vishwakarma supports traditional artisans and craftspeople working with their hands and tools in 18 notified trades, through skill training, toolkit support, credit and marketing assistance.",
+    "documents_required": [
+      "Aadhaar Card",
+      "Mobile number linked with Aadhaar",
+      "Bank account details",
+      "Ration Card if available",
+      "Proof of occupation / trade"
+    ],
+    "eligibility_criteria": {
+      "is_traditional_artisan": true,
+      "max_annual_income": null,
+      "min_age": 18,
+      "occupation": "artisan",
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Traditional artisans and craftspeople"
+    },
+    "eligibility_summary": "Artisan or craftsperson aged 18 years or above, working in one of the 18 notified traditional trades in the unorganised sector on a self-employment basis, and not having taken loans under PMEGP / PM SVANidhi / Mudra in the last 5 years as per scheme rules.",
+    "exclusions": [
+      "Persons below 18 years of age",
+      "Government employees and their family members",
+      "Persons who have availed PMEGP, PM SVANidhi or Mudra loans in the last 5 years, as per scheme rules",
+      "Trades not in the notified list of 18 trades"
+    ],
+    "financial_assistance": "Collateral-free enterprise loans in two tranches: Rs. 1 lakh first, then Rs. 2 lakh, at a concessional interest rate of 5% per annum, plus toolkit incentive and training stipend as per scheme rules.",
+    "helpline": "1800-267-7777",
+    "how_to_apply": "Enrol free of charge at a Common Service Centre with Aadhaar, followed by verification by the Gram Panchayat / Urban Local Body.",
+    "level": "Central",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "official_url": "https://pmvishwakarma.gov.in/",
+    "scheme_id": "PM-VISHWAKARMA",
+    "scheme_name": "PM Vishwakarma Scheme",
+    "source": "Ministry of MSME - PM Vishwakarma Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Rs. 2 lakh life insurance cover",
+      "Low annual premium of Rs. 436",
+      "Renewable every year",
+      "Cover available through the subscriber's bank account"
+    ],
+    "category": "Insurance",
+    "description": "PMJJBY is a renewable term life insurance scheme for bank account holders, providing life cover to the family on death of the subscriber due to any reason.",
+    "documents_required": [
+      "Aadhaar Card",
+      "Bank account details",
+      "Consent-cum-declaration form for auto-debit",
+      "Nominee details"
+    ],
+    "eligibility_criteria": {
+      "max_age": 50,
+      "max_annual_income": null,
+      "min_age": 18,
+      "occupation": "general",
+      "requires_bank_account": true,
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Bank account holders aged 18-50"
+    },
+    "eligibility_summary": "Individual bank / post office account holders aged 18 to 50 years, with consent for auto-debit of premium. Cover continues up to age 55 on renewal as per scheme rules.",
+    "exclusions": [
+      "Persons below 18 years or above 50 years at enrolment",
+      "Persons without an individual bank / post office account",
+      "Multiple accounts of the same person are not eligible for duplicate cover"
+    ],
+    "financial_assistance": "Life cover of Rs. 2,00,000 on death of the subscriber, for an annual premium of Rs. 436, auto-debited from the bank account.",
+    "helpline": "1800-110-001",
+    "how_to_apply": "Apply at the bank branch holding your account, or through net banking / mobile banking, by submitting the consent form before 31 May for the cover year.",
+    "level": "Central",
+    "ministry": "Ministry of Finance",
+    "official_url": "https://www.jansuraksha.gov.in/",
+    "scheme_id": "PMJJBY",
+    "scheme_name": "Pradhan Mantri Jeevan Jyoti Bima Yojana",
+    "source": "Department of Financial Services - PMJJBY Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Accident death and disability cover",
+      "Very low annual premium of Rs. 20",
+      "Renewable every year up to age 70",
+      "Auto-debit from the bank account"
+    ],
+    "category": "Insurance",
+    "description": "PMSBY is an accident insurance scheme for bank account holders, providing cover for accidental death and disability.",
+    "documents_required": [
+      "Aadhaar Card",
+      "Bank account details",
+      "Consent-cum-declaration form for auto-debit",
+      "Nominee details"
+    ],
+    "eligibility_criteria": {
+      "max_age": 70,
+      "max_annual_income": null,
+      "min_age": 18,
+      "occupation": "general",
+      "requires_bank_account": true,
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Bank account holders aged 18-70"
+    },
+    "eligibility_summary": "Individual bank / post office account holders aged 18 to 70 years, with consent for auto-debit of premium.",
+    "exclusions": [
+      "Persons below 18 years or above 70 years of age",
+      "Persons without an individual bank / post office account",
+      "Duplicate cover through multiple accounts of the same person"
+    ],
+    "financial_assistance": "Rs. 2,00,000 for accidental death or total irrecoverable disability, and Rs. 1,00,000 for partial disability, for an annual premium of Rs. 20.",
+    "helpline": "1800-110-001",
+    "how_to_apply": "Apply at the bank branch holding your account, or through net banking / mobile banking, by submitting the consent form.",
+    "level": "Central",
+    "ministry": "Ministry of Finance",
+    "official_url": "https://www.jansuraksha.gov.in/",
+    "scheme_id": "PMSBY",
+    "scheme_name": "Pradhan Mantri Suraksha Bima Yojana",
+    "source": "Department of Financial Services - PMSBY Guidelines (DRAFT - verify against official guideline before submission)"
+  },
+  {
+    "benefits": [
+      "Deposit-free LPG connection in the name of an adult woman",
+      "EMI option for stove and refill cost",
+      "Targeted subsidy on LPG refills as notified",
+      "Health benefit from smoke-free cooking"
+    ],
+    "category": "Energy",
+    "description": "PMUY provides deposit-free LPG connections to adult women from low-income households that do not already have an LPG connection, to replace polluting cooking fuels.",
+    "documents_required": [
+      "Aadhaar Card of the applicant and adult family members",
+      "State-issued ration card or family ID",
+      "Address proof",
+      "Bank account details",
+      "Self-declaration for Ujjwala 2.0 applicants where applicable",
+      "Passport-size photograph"
+    ],
+    "eligibility_criteria": {
+      "gender": "female",
+      "has_lpg_connection": false,
+      "max_annual_income": null,
+      "min_age": 18,
+      "occupation": "general",
+      "requires_landholding": false,
+      "requires_student_status": false,
+      "target_group": "Adult women in households without LPG"
+    },
+    "eligibility_summary": "Adult woman aged 18 years or above from a household without an existing LPG connection, belonging to SECC 2011 list, SC/ST, PMAY-G, Antyodaya, forest dwellers, island / river island residents, tea garden workers, or other categories notified, including households left out in Ujjwala 2.0 on self-declaration.",
+    "exclusions": [
+      "Households that already have an LPG connection in the name of any member",
+      "Applicants below 18 years of age",
+      "Male applicants, as the connection is issued in the name of an adult woman of the household"
+    ],
+    "financial_assistance": "Deposit-free LPG connection with EMI facility for the stove and first refill as per scheme rules, and targeted subsidy as notified by the Government.",
+    "helpline": "1800-266-6696",
+    "how_to_apply": "Apply online on pmuy.gov.in or at an LPG distributor with the KYC form, or through a Common Service Centre.",
+    "level": "Central",
+    "ministry": "Ministry of Petroleum and Natural Gas",
+    "official_url": "https://www.pmuy.gov.in/",
+    "scheme_id": "PMUY",
+    "scheme_name": "Pradhan Mantri Ujjwala Yojana",
+    "source": "Ministry of Petroleum and Natural Gas - PMUY Guidelines (DRAFT - verify against official guideline before submission)"
+  }
+]

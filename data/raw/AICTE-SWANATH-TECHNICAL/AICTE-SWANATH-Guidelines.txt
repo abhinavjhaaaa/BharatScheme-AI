@@ -1,0 +1,44 @@
+AICTE - SWANATH SCHOLARSHIP SCHEME (TECHNICAL DEGREE AND DIPLOMA)
+SCHEME IMPLEMENTATION GUIDELINES
+ALL INDIA COUNCIL FOR TECHNICAL EDUCATION (AICTE), MINISTRY OF EDUCATION
+GOVERNMENT OF INDIA
+
+1. OBJECTIVE OF THE SCHEME
+The AICTE Swanath Scholarship Scheme is an initiative implemented by the All India Council for Technical Education (AICTE), Ministry of Education, Government of India. The scheme aims to provide financial support to vulnerable youth who are:
+(a) Orphan children;
+(b) Children whose parents died due to Covid-19 pandemic;
+(c) Wards of Armed Forces and Central Paramilitary Forces (CAPF) personnel martyred in action (Shaheed).
+The assistance encourages such meritorious youth to pursue technical education in approved professional institutions.
+
+2. AMOUNT OF SCHOLARSHIP AND FINANCIAL BENEFITS
+Under the AICTE Swanath Scholarship Scheme:
+- Financial assistance of Rs. 50,000 per annum (fifty thousand rupees per year) is paid as a lump sum amount for every year of regular study.
+- The scholarship covers college tuition fees, purchase of laptops/computers, books, stationeries, equipment, and specialized technical software.
+- Duration of Scholarship:
+  * For Technical Degree: Up to a maximum of 4 years for students admitted to the first year (and up to 3 years for diploma holders admitted via lateral entry to 2nd year).
+  * For Technical Diploma: Up to a maximum of 3 years for students admitted to the first year (and up to 2 years for lateral entry).
+- Payment Mode: Direct Benefit Transfer (DBT) directly into the student's Aadhaar-seeded bank account via Public Financial Management System (PFMS).
+
+3. ELIGIBILITY CRITERIA
+To be eligible for the AICTE Swanath Scholarship, an applicant must satisfy all of the following conditions:
+(a) Qualifying Category (Must satisfy at least one):
+    - Orphan child (both parents deceased); OR
+    - Child whose both parents died due to Covid-19; OR
+    - Ward of Armed Forces or Central Armed Police Forces (CAPF) personnel martyred in action.
+(b) Educational Enrollment: The student must be admitted to the 1st year (or 2nd year lateral entry) of an AICTE-approved technical Degree or Diploma program in an AICTE-approved institution.
+(c) Income Ceiling: Family income from all sources must not exceed Rs. 8,00,000 (Rs. 8 Lakh) per annum. A valid income certificate issued by a competent revenue authority is required.
+(d) Exclusions:
+    - Students enrolled in non-technical or non-AICTE approved institutions.
+    - Students admitted through management quota or paid seats.
+    - Students receiving similar financial benefits or scholarships from any other Government scheme.
+
+4. REQUIRED DOCUMENTS CHECKLIST
+- Death certificate of parents (issued by Municipal Corporation / Registrar of Births and Deaths) for orphans or Covid-19 deceased parents.
+- Martyrdom certificate from Defence Ministry or CAPF competent authority.
+- Family Income Certificate issued by Tehsildar / Sub-Divisional Magistrate (SDM) / competent authority showing income <= Rs. 8 Lakh.
+- Bonafide Certificate issued by the Head of the AICTE-approved Technical Institution.
+- Class 10 and Class 12 / ITI / Diploma marksheet.
+- Aadhaar Card and bank account details seeded with Aadhaar.
+
+5. HOW TO APPLY
+Applications are invited annually through the National Scholarship Portal (NSP) at https://scholarships.gov.in/ under the AICTE Schemes tab. Applications are verified electronically at the Institute level and then by AICTE Nodal Officers before sanction.

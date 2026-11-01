@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>भारतScheme AI — A smarter way to discover government schemes.</title>
+  <link rel="icon" type="image/png" href="/static/assets/india_flag.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <!-- Top Tricolour Ribbon -->
+  <div class="top-tricolour-ribbon" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <div class="brand-flag-wrapper" title="National Flag of India">
+          <img src="/static/assets/india_flag.png" alt="National Flag of India" class="brand-flag-img">
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">
+            <span class="brand-bharat">भारत</span><span class="brand-scheme">Scheme</span>
+            <span class="brand-ai-badge">AI</span>
+          </div>
+          <p class="brand-tagline">A smarter way to discover government schemes.</p>
+        </div>
+      </div>
+
+      <nav class="nav-tabs" role="tablist">
+        <button class="nav-tab active" data-tab="explorer" role="tab" aria-selected="true">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Scheme Explorer</span>
+        </button>
+        <button class="nav-tab" data-tab="chat" role="tab" aria-selected="false">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>AI Assistant</span>
+          <span class="nav-pill-lang">हिन्दी / En</span>
+        </button>
+        <button class="nav-tab" data-tab="eligibility" role="tab" aria-selected="false">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span>Eligibility Checker</span>
+        </button>
+        <button class="nav-tab" data-tab="compare" role="tab" aria-selected="false">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="18"></rect><rect x="14" y="3" width="7" height="18"></rect></svg>
+          <span>Compare Schemes</span>
+        </button>
+      </nav>
+
+      <div class="header-status">
+        <div class="status-pill">
+          <span class="status-indicator" id="system-status-indicator"></span>
+          <span class="status-label" id="system-status-text">Ollama (Qwen2.5-3B) Active</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+
+    <!-- TAB 1: Scheme Explorer (Homepage Landing) -->
+    <section id="tab-explorer" class="tab-pane active" role="tabpanel">
+      <!-- Premium Hero Section -->
+      <div class="hero-banner">
+        <div class="hero-content">
+          <div class="hero-gov-badge">
+            <span class="gov-badge-icon">🏛️</span>
+            <span>National Citizen Welfare Portal • Powered by Grounded RAG</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Explore Central & State Schemes with <span class="hero-bharat">भारत</span><span class="hero-scheme">Scheme</span> <span class="hero-ai">AI</span>
+          </h1>
+          <p class="hero-tagline-text">
+            A smarter way to discover government schemes. Verified guidelines, transparent eligibility rules, and instant answers in English, हिन्दी & Hinglish.
+          </p>
+
+          <!-- Prominent Search Bar -->
+          <div class="search-bar-wrap">
+            <div class="search-input-box">
+              <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" id="scheme-search-input" placeholder="Search schemes in English, Hindi (किसान, छात्रवृत्ति), or Hinglish (kheti, padhai, bima)..." autocomplete="off">
+              <button id="clear-search-btn" class="clear-btn" style="display: none;" title="Clear search keyword">&times;</button>
+            </div>
+          </div>
+
+          <!-- 4 Core Feature Cards (Interactive Portal Gateways) -->
+          <div class="homepage-feature-cards">
+            <div class="feature-card active-feature" data-tab="explorer" role="button" tabindex="0">
+              <div class="feature-card-icon-wrap icon-teal">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+              <div class="feature-card-content">
+                <div class="feature-card-tag">Interactive Directory</div>
+                <h3 class="feature-card-title">Scheme Explorer</h3>
+                <p class="feature-card-desc">Browse central welfare schemes with full benefits, official ministries & subsidies.</p>
+              </div>
+              <div class="feature-card-arrow">→</div>
+            </div>
+
+            <div class="feature-card" data-tab="chat" role="button" tabindex="0">
+              <div class="feature-card-icon-wrap icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div class="feature-card-content">
+                <div class="feature-card-tag">Multilingual RAG</div>
+                <h3 class="feature-card-title">AI Assistant</h3>
+                <p class="feature-card-desc">Ask queries in English, हिन्दी or Hinglish. Grounded responses with page citations.</p>
+              </div>
+              <div class="feature-card-arrow">→</div>
+            </div>
+
+            <div class="feature-card" data-tab="eligibility" role="button" tabindex="0">
+              <div class="feature-card-icon-wrap icon-saffron">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="feature-card-content">
+                <div class="feature-card-tag">Rule Engine</div>
+                <h3 class="feature-card-title">Eligibility Checker</h3>
+                <p class="feature-card-desc">Enter your profile to evaluate criteria, exclusions, and qualified subsidies.</p>
+              </div>
+              <div class="feature-card-arrow">→</div>
+            </div>
+
+            <div class="feature-card" data-tab="compare" role="button" tabindex="0">
+              <div class="feature-card-icon-wrap icon-indigo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="18"></rect><rect x="14" y="3" width="7" height="18"></rect></svg>
+              </div>
+              <div class="feature-card-content">
+                <div class="feature-card-tag">Side-by-Side Matrix</div>
+                <h3 class="feature-card-title">Compare Schemes</h3>
+                <p class="feature-card-desc">Compare up to 3 schemes across benefits, limits, exclusions & document checklists.</p>
+              </div>
+              <div class="feature-card-arrow">→</div>
+            </div>
+          </div>
+
+          <!-- Category Filter Chips -->
+          <div class="category-filters-wrapper">
+            <span class="category-filter-label">Filter by Sector:</span>
+            <div class="category-filters" id="category-filters">
+              <button class="category-chip active" data-category="">All Categories</button>
+              <button class="category-chip" data-category="Agriculture">🌾 Agriculture</button>
+              <button class="category-chip" data-category="Education">🎓 Education & Scholarships</button>
+              <button class="category-chip" data-category="Health">🏥 Health</button>
+              <button class="category-chip" data-category="Housing">🏠 Housing</button>
+              <button class="category-chip" data-category="Financial Inclusion">🏦 Financial Inclusion</button>
+              <button class="category-chip" data-category="Savings">💰 Savings</button>
+              <button class="category-chip" data-category="Business">💼 Business</button>
+              <button class="category-chip" data-category="Pension">🧓 Pension</button>
+              <button class="category-chip" data-category="Skill">🛠️ Skill & Artisan</button>
+              <button class="category-chip" data-category="Insurance">🛡️ Insurance</button>
+              <button class="category-chip" data-category="Energy">🔥 Energy & LPG</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Header & Quick Actions -->
+      <div class="results-header">
+        <div class="results-count-wrap">
+          <span id="results-count" class="count-badge">Loading verified schemes...</span>
+        </div>
+        <div class="quick-actions">
+          <button id="quick-compare-btn" class="btn btn-outline" disabled>
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="18"></rect><rect x="14" y="3" width="7" height="18"></rect></svg>
+            <span>Compare Selected (<span id="compare-count">0</span>)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Schemes Grid -->
+      <div class="schemes-grid" id="schemes-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </section>
+
+    <!-- TAB 2: AI Scheme Assistant (RAG) -->
+    <section id="tab-chat" class="tab-pane" role="tabpanel">
+      <div class="chat-layout">
+        <!-- Chat Left Sidebar -->
+        <div class="chat-sidebar">
+          <div class="chat-sidebar-header">
+            <div class="chat-sidebar-icon">🤖</div>
+            <div>
+              <h3>Verified RAG Intelligence</h3>
+              <p class="sidebar-sub">Local Qwen2.5-3B + Multilingual Vectors</p>
+            </div>
+          </div>
+          <p class="sidebar-desc">
+            Powered by <strong>PyMuPDF</strong> document chunking, <strong>multilingual embeddings</strong>, <strong>FAISS</strong>, and local <strong>Qwen2.5-3B-Instruct</strong>.
+          </p>
+
+          <div class="filter-box">
+            <label for="chat-scheme-filter">Focus on Specific Scheme (Optional):</label>
+            <select id="chat-scheme-filter" class="form-select">
+              <option value="">Search Across All Schemes</option>
+              <option value="PM-KISAN">PM-KISAN (Agriculture)</option>
+              <option value="PM-USP-CSSS">PM-USP CSSS (Scholarship)</option>
+              <option value="AICTE-SWANATH-TECHNICAL">AICTE Swanath (Technical Degree)</option>
+              <option value="PM-JAY">PM-JAY Ayushman Bharat (Health)</option>
+              <option value="PMAY-G">PMAY-G (Housing)</option>
+              <option value="PMJDY">PM Jan Dhan Yojana (Financial Inclusion)</option>
+              <option value="SSY">Sukanya Samriddhi Yojana (Savings)</option>
+              <option value="PMMY">PM Mudra Yojana (Business)</option>
+              <option value="APY">Atal Pension Yojana (Pension)</option>
+              <option value="PM-VISHWAKARMA">PM Vishwakarma (Skill)</option>
+              <option value="PMJJBY">PM Jeevan Jyoti Bima (Insurance)</option>
+              <option value="PMSBY">PM Suraksha Bima (Insurance)</option>
+              <option value="PMUY">PM Ujjwala Yojana (Energy)</option>
+            </select>
+          </div>
+
+          <div class="suggested-queries">
+            <h4>💡 Recommended Questions</h4>
+            <div class="lang-section-label">🇬🇧 English</div>
+            <button class="prompt-chip" data-query="How much financial assistance does PM-KISAN provide and in how many installments?">
+              "How much financial assistance does PM-KISAN provide?"
+            </button>
+            <button class="prompt-chip" data-query="What is the family income limit for PM-USP Central Sector Scholarship Scheme?">
+              "What is the income limit for PM-USP scholarship?"
+            </button>
+
+            <div class="lang-section-label">🇮🇳 Hinglish</div>
+            <button class="prompt-chip" data-query="PM kisan me kitna paisa milta hai aur kist kab aati hai?">
+              "PM kisan me kitna paisa milta hai?"
+            </button>
+            <button class="prompt-chip" data-query="Scholarship ke liye kya eligibility aur income limit hai?">
+              "Scholarship ke liye kya eligibility aur income limit hai?"
+            </button>
+
+            <div class="lang-section-label">🇮🇳 हिन्दी (Hindi)</div>
+            <button class="prompt-chip" data-query="पीएम किसान योजना में कितने पैसे और किस्तें मिलती हैं?">
+              "पीएम किसान योजना में कितने पैसे मिलते हैं?"
+            </button>
+            <button class="prompt-chip" data-query="स्कॉलरशिप योजना के लिए क्या पात्रता, नियम और शर्तें हैं?">
+              "स्कॉलरशिप योजना के लिए क्या पात्रता और नियम हैं?"
+            </button>
+          </div>
+
+          <div class="grounding-note">
+            <svg class="shield-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <div>
+              <strong>Strict Anti-Hallucination:</strong>
+              Answers are generated strictly from official guidelines. Questions without document proof are safely rejected.
+            </div>
+          </div>
+        </div>
+
+        <!-- Chat Main Panel -->
+        <div class="chat-panel">
+          <div class="chat-panel-header" id="chat-panel-header">
+            <div class="chat-session-info">
+              <span class="chat-session-badge" id="chat-session-badge">
+                <span class="active-dot"></span>
+                <span id="chat-session-title">All Schemes</span>
+              </span>
+              <button type="button" id="clear-scheme-focus-btn" class="btn-clear-focus" style="display: none;" title="Switch back to all schemes">
+                &times; Clear Filter
+              </button>
+            </div>
+            <button type="button" id="new-chat-btn" class="btn btn-outline btn-sm new-chat-btn" title="Start a fresh chat conversation">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              <span>New Chat</span>
+            </button>
+          </div>
+
+          <div class="chat-messages" id="chat-messages">
+            <div class="chat-message assistant">
+              <div class="message-avatar assistant-avatar">
+                <img src="/static/assets/india_flag.png" alt="India Flag" class="avatar-flag-icon">
+              </div>
+              <div class="message-content">
+                <p>Namaste! I am <strong><span class="brand-bharat">भारत</span><span class="brand-scheme">Scheme</span> AI</strong>. Ask me anything about Indian government schemes, eligibility rules, financial assistance amounts, or required documents.</p>
+                <p class="citation-hint">Every answer is strictly grounded in official documents with verified page citations.</p>
+              </div>
+            </div>
+          </div>
+
+          <form id="chat-form" class="chat-input-bar">
+            <textarea id="chat-input" placeholder="Type your question in English, Hindi, or Hinglish (e.g., 'PM-JAY me kitna cover milta hai?')..." rows="1"></textarea>
+            <button type="submit" id="chat-send-btn" class="btn btn-primary" title="Send Question">
+              <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: Eligibility Checker -->
+    <section id="tab-eligibility" class="tab-pane" role="tabpanel">
+      <div class="eligibility-container">
+        <div class="eligibility-header">
+          <div class="section-kicker">Transparent Rule Engine</div>
+          <h2>Deterministic Scheme Eligibility Evaluator</h2>
+          <p>Fill in your basic profile details to check which government schemes you qualify for, with transparent rule breakdowns.</p>
+        </div>
+
+        <div class="eligibility-layout">
+          <form id="eligibility-form" class="eligibility-form-card">
+            <div class="card-section-title">
+              <span class="card-section-badge">1</span>
+              <h3>Your Profile Information</h3>
+            </div>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="elig-occupation">Primary Occupation / Status</label>
+                <select id="elig-occupation" class="form-select" required>
+                  <option value="">Select Status</option>
+                  <option value="farmer">Farmer / Agriculturalist</option>
+                  <option value="student">Student (School / College / University)</option>
+                  <option value="salaried">Salaried / Private Employee</option>
+                  <option value="unemployed">Unemployed / Job Seeker</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="elig-income">Annual Gross Family Income (₹)</label>
+                <input type="number" id="elig-income" class="form-input" placeholder="e.g. 200000" min="0" step="5000" required>
+                <span class="input-hint">Total annual income of entire household</span>
+              </div>
+
+              <div class="form-group">
+                <label for="elig-age">Age (Years)</label>
+                <input type="number" id="elig-age" class="form-input" placeholder="e.g. 24" min="1" max="110">
+              </div>
+
+              <div class="form-group">
+                <label for="elig-scheme-select">Evaluate For</label>
+                <select id="elig-scheme-select" class="form-select">
+                  <option value="">All Registered Schemes</option>
+                  <option value="PM-KISAN">PM-KISAN</option>
+                  <option value="PM-USP-CSSS">PM-USP Central Sector Scholarship</option>
+                  <option value="AICTE-SWANATH-TECHNICAL">AICTE Swanath Scholarship</option>
+                  <option value="PM-JAY">PM-JAY Ayushman Bharat</option>
+                  <option value="PMAY-G">PMAY-G</option>
+                  <option value="PMJDY">PM Jan Dhan Yojana</option>
+                  <option value="SSY">Sukanya Samriddhi Yojana</option>
+                  <option value="PMMY">PM Mudra Yojana</option>
+                  <option value="APY">Atal Pension Yojana</option>
+                  <option value="PM-VISHWAKARMA">PM Vishwakarma</option>
+                  <option value="PMJJBY">PM Jeevan Jyoti Bima Yojana</option>
+                  <option value="PMSBY">PM Suraksha Bima Yojana</option>
+                  <option value="PMUY">PM Ujjwala Yojana</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Conditional Section: Agriculture Details -->
+            <div id="section-farmer-fields" class="form-subcard" style="display: none;">
+              <h4>🌾 Agricultural & Landholding Details</h4>
+              <div class="form-grid">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-landholding" class="form-checkbox">
+                  <label for="elig-landholding">Owns cultivable agricultural land in name of family</label>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-taxpayer" class="form-checkbox">
+                  <label for="elig-taxpayer">Paid Income Tax in the last assessment year (Exclusion)</label>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-gov-emp" class="form-checkbox">
+                  <label for="elig-gov-emp">Family member is regular Govt Employee (non-Class IV)</label>
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-inst-land" class="form-checkbox">
+                  <label for="elig-inst-land">Institutional landholder (Trust / Corporate)</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conditional Section: Student Details -->
+            <div id="section-student-fields" class="form-subcard" style="display: none;">
+              <h4>🎓 Education & Student Criteria</h4>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="elig-education-level">Course Level</label>
+                  <select id="elig-education-level" class="form-select">
+                    <option value="undergraduate">Undergraduate Degree (B.Tech, B.Sc, B.A, B.Com, etc.)</option>
+                    <option value="postgraduate">Postgraduate Degree (M.Tech, M.Sc, etc.)</option>
+                    <option value="diploma">Technical Diploma</option>
+                    <option value="school">School / Higher Secondary</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="elig-percentile">Class 12th Board Percentile (%)</label>
+                  <input type="number" id="elig-percentile" class="form-input" placeholder="e.g. 85.5" min="0" max="100" step="0.1">
+                  <span class="input-hint">Cutoff for PM-USP is 80th percentile</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="elig-special-cat">Special Category Status</label>
+                  <select id="elig-special-cat" class="form-select">
+                    <option value="none">General / None of the below</option>
+                    <option value="orphan">Orphan Student</option>
+                    <option value="covid_deceased_parents">Both parents deceased due to COVID-19</option>
+                    <option value="martyred_armed_forces_ward">Child of martyred Armed / Paramilitary Forces personnel</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label>Institution Type</label>
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="elig-aicte" class="form-checkbox">
+                    <label for="elig-aicte">Institution is AICTE Approved</label>
+                  </div>
+                  <div class="checkbox-group" style="margin-top: 8px;">
+                    <input type="checkbox" id="elig-regular" class="form-checkbox" checked>
+                    <label for="elig-regular">Full-Time / Regular Mode (Not distance learning)</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- General Section: Details for the 10 added schemes -->
+            <div id="section-general-fields" class="form-subcard">
+              <h4>🏠 General Details (for Health, Housing, Pension, Insurance & other schemes)</h4>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="elig-gender">Gender</label>
+                  <select id="elig-gender" class="form-select">
+                    <option value="">Prefer not to say / Not applicable</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-bank-account" class="form-checkbox">
+                  <label for="elig-bank-account">Has a savings bank / post office account</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-lpg" class="form-checkbox">
+                  <label for="elig-lpg">Household already has an LPG connection</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-houseless" class="form-checkbox">
+                  <label for="elig-houseless">Houseless or living in a kutcha / dilapidated house</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-secc" class="form-checkbox">
+                  <label for="elig-secc">Household is in the SECC deprived / vulnerable list</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-artisan" class="form-checkbox">
+                  <label for="elig-artisan">Traditional artisan / craftsperson in a notified trade</label>
+                </div>
+                <div class="checkbox-group">
+                  <input type="checkbox" id="elig-business-plan" class="form-checkbox">
+                  <label for="elig-business-plan">Has a viable business plan (for Mudra)</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary btn-lg" id="check-elig-btn">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                <span>Evaluate My Eligibility</span>
+              </button>
+              <button type="button" class="btn btn-outline" id="reset-elig-btn">Reset Form</button>
+            </div>
+          </form>
+
+          <!-- Eligibility Evaluation Results -->
+          <div class="eligibility-results" id="eligibility-results-panel">
+            <div class="empty-state">
+              <div class="empty-icon">📋</div>
+              <h3>Ready to Check Eligibility</h3>
+              <p>Complete your profile details on the left and click "Evaluate My Eligibility" to see transparent rule matching results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: Scheme Comparison -->
+    <section id="tab-compare" class="tab-pane" role="tabpanel">
+      <div class="compare-header">
+        <div class="section-kicker">Side-by-Side Analysis</div>
+        <h2>Scheme Comparison Matrix</h2>
+        <p>Compare financial benefits, eligibility prerequisites, income ceilings, exclusions, and documentation requirements across schemes.</p>
+
+        <div class="compare-selector-bar">
+          <label>Select Schemes to Compare (2 to 3 schemes):</label>
+          <div class="scheme-checkbox-list" id="compare-selector-list">
+            <!-- Dynamically populated -->
+          </div>
+          <button id="execute-compare-btn" class="btn btn-primary">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="18"></rect><rect x="14" y="3" width="7" height="18"></rect></svg>
+            <span>Compare Selected</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="comparison-results-wrap" id="comparison-results-wrap">
+        <!-- Rendered by JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scheme Detail Modal -->
+  <div class="modal-backdrop" id="scheme-modal" style="display: none;">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="scheme-category-badge" id="modal-category">Category</span>
+          <h2 id="modal-title">Scheme Title</h2>
+          <span class="ministry-tag" id="modal-ministry">Ministry Name</span>
+        </div>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-modaltab="overview">Overview & Benefits</button>
+        <button class="modal-tab" data-modaltab="eligibility">Eligibility & Exclusions</button>
+        <button class="modal-tab" data-modaltab="documents">Documents & Application</button>
+      </div>
+
+      <div class="modal-body">
+        <div id="modal-pane-overview" class="modal-pane active">
+          <div class="benefit-highlight-box">
+            <h3>Financial Assistance</h3>
+            <p id="modal-financial-amount">Amount</p>
+          </div>
+          <h4>Description</h4>
+          <p id="modal-description">Description text...</p>
+          <h4>Key Benefits</h4>
+          <ul id="modal-benefits-list" class="styled-list"></ul>
+        </div>
+
+        <div id="modal-pane-eligibility" class="modal-pane">
+          <h4>Eligibility Summary</h4>
+          <p id="modal-eligibility-summary">Summary text...</p>
+          <h4>Statutory Exclusions</h4>
+          <ul id="modal-exclusions-list" class="styled-list cross-list"></ul>
+        </div>
+
+        <div id="modal-pane-documents" class="modal-pane">
+          <h4>Required Documents Checklist</h4>
+          <ul id="modal-documents-list" class="styled-list check-list"></ul>
+          <h4>How to Apply</h4>
+          <p id="modal-how-to-apply">Application process...</p>
+          <div class="helpline-contact">
+            <strong>Official Helpline:</strong> <span id="modal-helpline">Contact</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a id="modal-official-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          <span>Visit Official Portal</span>
+        </a>
+        <button id="modal-ask-ai-btn" class="btn btn-outline">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Ask AI About This Scheme</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-brand-wrap">
+        <div class="footer-brand-title">
+          <span class="brand-bharat">भारत</span><span class="brand-scheme">Scheme</span> <span class="brand-ai-badge">AI</span>
+        </div>
+        <p class="footer-tagline">A smarter way to discover government schemes.</p>
+      </div>
+      <p class="footer-tech">Built with PyMuPDF, Multilingual Embeddings, FAISS, and Local Ollama (Qwen2.5-3B-Instruct).</p>
+      <p class="footer-sub">All scheme details are retrieved from official government guidelines and statutory portals.</p>
+    </div>
+    <div class="bottom-tricolour-ribbon" aria-hidden="true"></div>
+  </footer>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
